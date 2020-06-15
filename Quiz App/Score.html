@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Quiz App</title>
+    <link type="text/css" rel="stylesheet" href="style.css" />
+  </head>
+  
+  <body>
+        <h1>Quiz Score Card</h1>
+        <div class="congrats">You have completed the quiz!!!!</div>
+        <div class="scores blink_me">
+          <span id="result1"></span> correct out of <span id="result2"></span>
+        </div>
+  </body>
+
+  <script>
+    document.getElementById("result1").innerHTML = localStorage.getItem("questions");
+    document.getElementById("result2").innerHTML = localStorage.getItem("total");
+  </script>
+</html>

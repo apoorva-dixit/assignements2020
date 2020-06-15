@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ToDo App</title>
+    <link type="text/css" rel="stylesheet" href="primary.css" />
+  </head>
+  <body>
+    <div id="myDIV" class="header">
+      <h2 class="h2class">ToDo App</h2>
+      <input type="text" id="myInput" placeholder="Enter ToDo......" />
+      <div class="buttonAlign">
+        <span onclick="newElement()" class="addBtn">Add</span>
+        <span onclick="countElement()" class="addBtn">Count</span>
+      </div>
+      <div class="buttonAlign">
+        <div class="buttonAlign">
+          <h3 class="h3Class">Checked Items:</h3> 
+          <p id="checkedCount"></p>
+        </div>
+        <div class="buttonAlign">
+          <h3 class="h3Class">UnChecked Items:</h3> 
+          <p id="uncheckedCount"></p>
+        </div>
+      </div>
+
+    </div>
+
+    <ul id="myul">
+      <li>Submit assignment</li>
+      <li>Meeting at 6</li>
+      <li>Read a book</li>
+      <li>Go to market</li>
+      <li>Call a friend</li>
+    </ul>
+  </body>
+
+  <script src="script.js"></script>
+</html>
